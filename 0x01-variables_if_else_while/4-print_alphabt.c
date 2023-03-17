@@ -9,13 +9,14 @@
  **/
 int main(void)
 {
+	char alf[24] = "abcdfghijklmnoprstuvwxyz";
 	int i;
 
 	for (i = 0 ; i < 26 ; i++)
 	{
 		if (i != 4 && i != 17)
 		{
-			printf("%d", i);
+			putchar(alf[i]);
 		}
 	}
 	putchar('\n');
