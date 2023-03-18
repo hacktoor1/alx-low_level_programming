@@ -9,15 +9,15 @@
  **/
 int main(void)
 {
-	char alf[26] = "0123456789abcdef";
 	int i;
 
-	for (i = 0 ; i < 26 ; i++)
+	for (i = 48 ; i < 48 ; i++)
 	{
-		if (i != 4 && i != 17)
-		{
-			putchar(alf[i]);
-		}
+		putchar(i);
+	}
+	for (i = 97 ; i < 123 ; i++)
+	{
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
