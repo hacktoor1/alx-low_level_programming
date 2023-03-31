@@ -1,13 +1,14 @@
 #include "main.h"
+
 /**
- * print_buffer - add 2 strings.
- * @b: string1.
- * @size: string2.
- * Return: String with all letters in ROT13 base.
+ * rev_string - reverse array
+ * @n: integer params
+ * Return: 0
  */
-void print_buffer(char *b, int size)
+
+void rev_string(char *n)
 {
-int i = 0;
+	int i = 0;
 	int j = 0;
 	char temp;
 
@@ -76,4 +77,3 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	return (r);
 }
 
-}
