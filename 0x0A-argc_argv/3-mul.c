@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -9,20 +8,20 @@
  * @argv: Pointer of array of pointers containing strings entering main
  * Return: Always 0 (Success)
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int i, ex;
+	int n, ex;
 
 	ex = 0;
-        if (argc != 3)
+	if (argc != 3)
 	{
 		printf("%s\n", "Error");
 		ex = 1;
 	}
 	else
 	{
-		i = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n", i);
+		n = atoi(argv[1]) * atoi(argv[2]);
+		printf("%i\n", n);
 	}
 	return (ex);
 }
