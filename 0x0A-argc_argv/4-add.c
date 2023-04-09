@@ -46,7 +46,7 @@ int main(int argc, char **argv)
 		for (i = 1; i < argc; i++)
 		{
 			if (_isnumber(argv[i]))
-				n += atoi(argv[n])
+				n += atoi(argv[i]);
 			else
 				ex = 1;
 		}
